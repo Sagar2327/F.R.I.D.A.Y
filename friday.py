@@ -38,7 +38,7 @@ def greetMe():
     speak("Good Afternoon!")
   else:
     speak("Good Evening!")
-  speak("This is Friday, your assistant. How may I help you?")
+  speak("This is Friday, your assistant.")
 
 
 def takeCommand():
@@ -99,8 +99,7 @@ def handle_user_input():
 def namaste():
   greetMe()
   while True:
-    # query = takeCommand().lower
-
+    speak("How can I assist you today?")
     main_query, query = handle_user_input()
     # response = get_completion(handle_user_input())
     print(main_query)
